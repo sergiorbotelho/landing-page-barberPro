@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -17,21 +18,28 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Dev Barber - Sua barbearia</title>
   </head>
   <body>
     <div class="bg-home">
       <header>
         <nav class="header-content container">
-          <div class="header-icons">
+          <div class="header-icons" data-aos="fade-down">
             <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
             <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
             <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
           </div>
-          <div class="header-logo">
-            <img src="./assets/logo.svg" alt="Logo Barbearia" />
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="./assets/logo.svg"
+              alt="Logo Barbearia"
+              data-aos="flip-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+            />
           </div>
-          <div>
+          <div data-aos="fade-down">
             <a
               class="header-button"
               href="https://api.whatsapp.com/send/?phone=5581997492251&text=Quero%20fazer%20um%20agendamento."
@@ -40,7 +48,7 @@
             >
           </div>
         </nav>
-        <main class="hero container">
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
           <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
           <p>Horário de funcionamento: 09:00 às 19:00</p>
           <a
@@ -54,10 +62,14 @@
     </div>
     <section class="about">
       <div class="container about-content">
-        <div>
+        <div data-aos="zoom-in" data-aos-delay="100">
           <img src="./assets/images.svg" alt="Imagem sobre a barbearia" />
         </div>
-        <div class="about-description">
+        <div
+          class="about-description"
+          data-aos="zoom-out-left"
+          data-aos-delay="250"
+        >
           <h2>Sobre</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
@@ -83,21 +95,21 @@
         </p>
       </div>
       <section class="haircuts">
-        <div class="haircut">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="150">
           <img src="./assets/corte1.png" alt="Corte normal" />
           <div class="haircut-info">
             <strong>Corte normal</strong>
             <button>R$ 45,00</button>
           </div>
         </div>
-        <div class="haircut">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="250">
           <img src="./assets/corte2.png" alt="Corte normal" />
           <div class="haircut-info">
             <strong>Corte normal</strong>
             <button>R$ 45,00</button>
           </div>
         </div>
-        <div class="haircut">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="400">
           <img src="./assets/corte3.png" alt="Corte normal" />
           <div class="haircut-info">
             <strong>Corte normal</strong>
@@ -133,9 +145,13 @@
       href="https://api.whatsapp.com/send/?phone=5581997492251&text=Quero%20fazer%20um%20agendamento."
       class="btn-whatsapp"
       target="_blank"
+      data-aos="zoom-in-up"
+      data-aos-delay="400"
     >
       <img src="./assets/whatssapp.svg" alt="Botão whatsapp" />
       <span class="tooltip-text">Agende seu horário</span>
     </a>
+
+    <script src="script.js"></script>
   </body>
 </html>
