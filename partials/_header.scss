@@ -1,7 +1,20 @@
 header {
   width: 100%;
 }
-
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $white-normal;
+  gap: 10px;
+  font-style: italic;
+  font-size: 18px;
+}
+nav img {
+  width: 150px;
+  height: 150px;
+}
 .header-content {
   display: flex;
   align-items: center;
