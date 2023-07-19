@@ -1,3 +1,3 @@
 # Landing page Dom Onassis Barbershop 💈🧔
 
-https://landing-page-barber-pro.vercel.app/
+https://dom-barbershop.vercel.app/
